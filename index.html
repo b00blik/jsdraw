@@ -19,7 +19,13 @@
         <div id="field">
             <canvas id="drawCanvas" width="1" height="1" style="border:1px solid #000000;"></canvas>
             <div id="buttons">
-                    <button id="clear"/>Clear canvas</button>
+                    <button id="clear">Clear canvas</button>
+            </div>
+            <div id="colorButtons">
+                    <button id="purple_color">Purple</button>
+                    <button id="green_color">Green</button>
+                    <button id="yellow_color">Yellow</button>
+                    <button id="brown_color">Brown</button>
             </div>
         </div>
 
@@ -78,7 +84,7 @@
                     }
                 }
             
-                function addUser() {
+                function checkAndSet() {
                     var valid = true;
                     allFields.removeClass( "ui-state-error" );
                 
@@ -106,7 +112,7 @@
                 width: 350,
                 modal: true,
                 buttons: {
-                    "Set params": addUser,
+                    "Set params": checkAndSet,
                     Cancel: function() {
                         dialog.dialog( "close" );
                     }
@@ -119,7 +125,7 @@
             
                 form = dialog.find( "form" ).on( "submit", function( event ) {
                     event.preventDefault();
-                    addUser();
+                    checkAndSet();
                 });
 
                 dialog.dialog( "open" );

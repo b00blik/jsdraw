@@ -12,8 +12,6 @@
     var canvas;
     var canvasDiv;
 
-    //TODO: buttons with colors;
-
     function addClick(x,y,dragging){
         clickX.push(x);
         clickY.push(y);
@@ -79,3 +77,21 @@
         clickDrag = [];
         clickColor = [];
     });
+
+    $('#purple_color').button().click(function() {
+        curColor = colorPurple;
+    });
+    
+    $('#yellow_color').button().click(function() {
+        curColor = colorYellow;
+    });
+
+    $('#green_color').button().click(function() {
+        curColor = colorGreen;
+    });
+
+    $('#brown_color').button().click(function() {
+        curColor = colorBrown;
+    });
+
+    //TODO: styling buttons
