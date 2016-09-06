@@ -7,3 +7,37 @@
     width: 100%;
     text-align: center;
 }
+
+#colorButtons {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.ui-button.rounded-color-purple {
+    width: 60px;
+    height: 60px;
+    background-color: #cb3594;
+    border-radius: 60px;
+}
+
+.ui-button.rounded-color-green {
+    width: 60px;
+    height: 60px;
+    background-color: #659b41;
+    border-radius: 60px;
+}
+
+.ui-button.rounded-color-yellow {
+    width: 60px;
+    height: 60px;
+    background-color: #ffcf33;
+    border-radius: 60px;
+}
+
+.ui-button.rounded-color-brown {
+    width: 60px;
+    height: 60px;
+    background-color: #986928;
+    border-radius: 60px;
+}
