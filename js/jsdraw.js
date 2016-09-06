@@ -7,6 +7,7 @@
     var colorYellow = "#ffcf33";
     var colorBrown = "#986928";
     var curColor = colorPurple;
+    var purpleButton, greenButton, yellowButton, brownButton;
     var paint;
     var context;
     var canvas;
@@ -45,6 +46,14 @@
         canvas.width=width;
         canvas.height=height;
     }
+
+    function styleButtons(){
+        document.getElementById('purple_color').classList.add('rounded-color-purple');
+        document.getElementById('green_color').classList.add('rounded-color-green');
+        document.getElementById('yellow_color').classList.add('rounded-color-yellow');
+        document.getElementById('brown_color').classList.add('rounded-color-brown');
+    }
+
 
     $('#drawCanvas').mousedown(function(e){
         var mouseX = e.pageX - this.offsetLeft;
@@ -92,6 +101,10 @@
 
     $('#brown_color').button().click(function() {
         curColor = colorBrown;
+    });
+
+    $(document).ready(function() {
+        styleButtons();
     });
 
     //TODO: styling buttons
