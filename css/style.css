@@ -14,6 +14,11 @@
     margin-top: 40px;
 }
 
+#slider {
+    width: 80px;
+    margin: 30px auto;
+}
+
 .ui-button.rounded-color-purple {
     width: 60px;
     height: 60px;
@@ -39,5 +44,19 @@
     width: 60px;
     height: 60px;
     background-color: #986928;
+    border-radius: 60px;
+}
+
+.ui-button.rounded-color-white {
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 60px;
+}
+
+.ui-button.rounded-color-black {
+    width: 60px;
+    height: 60px;
+    background-color: #000;
     border-radius: 60px;
 }
